@@ -1,0 +1,37 @@
+### GET request to example server
+GET http://localhost:8085/accounts
+Accept: application/json
+Authorization:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTc0NzMwNzA5OSwiaWF0IjoxNzQ3MzA2NDk5LCJzY29wZSI6IkFETUlOIFVTRVIifQ.xu1S_3X6H7Us7Xf278DU6J0wgauwKacUbrZS9i6x9Wtq-_jCjrs9T4Tfv4XZnzj0dA21GR_NN4NTT4Bl5Fvprw
+
+###
+
+GET http://localhost:8085/auth/profile
+Authorization:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTc0NzUyMjEzNCwiaWF0IjoxNzQ3NTIxNTM0LCJzY29wZSI6IlVTRVIifQ.iB-v3bqDRRICT-ODLwTrOvLPaYnX5BvwIi-Z4nRtBj-vH8M284ayxxoioumwKFevGbVfHVVblySPNfwIb8iYsQ
+###
+
+POST http://localhost:8085/auth/login
+Content-Type: application/x-www-form-urlencoded
+
+username=user1&password=12345
+###
+
+POST http://localhost:8085/customers
+Content-Type: application/json
+Authorization:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTc0NzY1NzA1OCwiaWF0IjoxNzQ3NjU2NDU4LCJzY29wZSI6IlVTRVIifQ._vQVNumSy7PwHTY934fGtkN-8vpLgGuFGYLxd3r8WH4C7g1bp17To-4x3YoJsALTA2NaAo7VtcjnT9o0C9VSOg
+
+{
+  "name": "Yassine", "email": "yassine@gmail.com"
+}
+
+
+###
+
+GET http://localhost:8085/customers
+Accept: application/json
+Authorization:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTc0NzY1NzA1OCwiaWF0IjoxNzQ3NjU2NDU4LCJzY29wZSI6IlVTRVIifQ._vQVNumSy7PwHTY934fGtkN-8vpLgGuFGYLxd3r8WH4C7g1bp17To-4x3YoJsALTA2NaAo7VtcjnT9o0C9VSOg
+###
+GET http://localhost:8085/accounts
+Accept: application/json
+Authorization:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyMSIsImV4cCI6MTc0NzY2MjA1NSwiaWF0IjoxNzQ3NjYxNDU1LCJzY29wZSI6IlVTRVIifQ.v0YSzvbFvAExt3xeC2yCsP1ziQdMCaaCh8hrYokEzDCpC-Jm0vEWQ_F4QshfpgpqF_2c-o1eZ0hTlimO8WuQZg
+
+
